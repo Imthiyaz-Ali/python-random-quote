@@ -1,9 +1,8 @@
 # Let's Write a Python Quote Bot!
 
-This repository will get you started with building a quote bot in Python. It's meant to be used along with the [Learning Lab](https://lab.github.com) intro to Python.
+This repository will give random anime quotes when executed. The quotes are fetched from the AnimeChan API which provides thousands of Anime quotes and then writes to a file called quotes.txt file and then fethces any random quote from the file and prints it to the terminal.
 
-When complete, you'll be able to grab random quotes from the command line, like this:
-
+# Let's get stated
 > **$** python get-quote.py
 > 
 > Keep it logically awesome
@@ -12,6 +11,3 @@ When complete, you'll be able to grab random quotes from the command line, like 
 > 
 > Speak like a human
 
-## Start the Tutorial
-
-You can find your next step in [this repo's issues](../../issues/)!
