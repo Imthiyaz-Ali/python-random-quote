@@ -21,13 +21,12 @@ def primary():
     f.write(newquote)
     f.seek(0)
     quotes = f.readlines()
-    # print(quotes)
     f.close()
 
     last = len(quotes) - 1
     rnd = random.randint(0, last)
 
-    print(quotes[rnd], sep="")
+    print(quotes[rnd])
 
 
 if __name__ == "__main__":
