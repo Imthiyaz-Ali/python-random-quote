@@ -5,14 +5,15 @@ import requests
 def primary():
     #print("Keep it logically awesome.")
 
-    f = open("quotes.txt", 'r+')
+    f = open("quotes.txt", 'a+')
 
     res = requests.get("https://animechan.vercel.app/api/random")
     res = res.json()
     newquote = res['quote']
 
-    # f.seek(0)
-    fdata = f.read()
+    f.seek(0)
+    fdata = f.readlines()
+    # print(fdata)
 
     if fdata:
         f.write("\n")
@@ -23,11 +24,10 @@ def primary():
     # print(quotes)
     f.close()
 
-    print(len(quotes))
     last = len(quotes) - 1
     rnd = random.randint(0, last)
 
-    print(quotes[rnd], quotes[rnd], sep="")
+    print(quotes[rnd], sep="")
 
 
 if __name__ == "__main__":
